@@ -1,0 +1,25 @@
+{
+  "name": "@capital-care/api",
+  "version": "0.0.1",
+  "type": "module",
+  "engines": {
+    "node": "^24"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "node dist/main.js",
+    "lint": "eslint src/",
+    "migrate": "node dist/migrate.js",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "express": "^5.0.0",
+    "@capital-care/ledger": "workspace:*",
+    "@capital-care/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^26.6.6",
+    "typescript": "^5.3.3"
+  }
+}
